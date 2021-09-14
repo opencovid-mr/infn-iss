@@ -10,7 +10,7 @@ for regione in regioni:
 	datasets_c=[]
 	datasets_nc=[]
 
-	url='https://covid19.infn.it/iss/plots/iss_bydate_'+regione[0]+'_terapia_intensiva.div'
+	url='https://covid19.infn.it/iss/plots/iss_bydate_'+regione[0]+'_positivi.div'
 
 	s=requests.get(url).text
 
@@ -44,5 +44,5 @@ for regione in regioni:
 
 data=df_matrix['data'].iloc[-1]
 
-df_matrix.to_csv('./ricoveri/ti_italia_'+data[:10]+'.csv', index=False)
-df_matrix.to_csv('./ricoveri/ti_italia_latest.csv', index=False)
+df_matrix.to_csv('./ricoveri/positivi_italia_'+data[:10]+'.csv', index=False)
+df_matrix.to_csv('./ricoveri/positivi_italia_latest.csv', index=False)
