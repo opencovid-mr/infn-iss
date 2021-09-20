@@ -39,9 +39,9 @@ jobs:
           python script.py
 
       # Parse them all
-      - name: ScrapeTI
+      - name: Scrape_age
         run: |
-          python script_ti.py
+          python script_age.py
           
           
       # Commit & Push
