@@ -37,12 +37,7 @@ jobs:
       - name: ScrapeR
         run: |
           python script.py
-
-      # Parse them all
-      - name: Scrape_age
-        run: |
-          python script_age.py
-          
+         
           
       # Commit & Push
       - name: Commit a new report (if necessary)
