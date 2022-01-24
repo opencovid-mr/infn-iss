@@ -37,7 +37,12 @@ jobs:
       - name: ScrapeR
         run: |
           python script.py
-         
+          
+ 
+      # Parse them all
+      - name: ScrapeR
+        run: |
+          python script_positivi.py        
           
       # Commit & Push
       - name: Commit a new report (if necessary)
